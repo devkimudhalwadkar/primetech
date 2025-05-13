@@ -1,10 +1,10 @@
 export const CATEGORY_OPTIONS = [
-  { value: 'Electronics', label: 'Electronics' },
-  { value: 'Furniture', label: 'Furniture' },
-  { value: 'Clothing', label: 'Clothing' },
-  { value: 'Toys', label: 'Toys' },
-  { value: 'Groceries', label: 'Groceries' },
-  { value: 'Books', label: 'Books' },
-  { value: 'Jewelry', label: 'Jewelry' },
-  { value: 'Beauty Products', label: 'Beauty Products' }
+  { value: 'Online Courses', label: 'Online Courses' },
+  { value: 'E-Books', label: 'E-Books' },
+  { value: 'Study Materials', label: 'Study Materials' },
+  { value: 'Video Tutorials', label: 'Video Tutorials' },
+  { value: 'Practice Tests', label: 'Practice Tests' },
+  { value: 'Certification Programs', label: 'Certification Programs' },
+  { value: 'Learning Kits', label: 'Learning Kits' },
+  { value: 'Educational Software', label: 'Educational Software' }
 ];

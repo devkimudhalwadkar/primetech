@@ -66,7 +66,11 @@ export const columns: ColumnDef<Product>[] = [
   },
   {
     accessorKey: 'price',
-    header: 'PRICE'
+    header: 'PRICE',
+    cell: ({ row }) => {
+      const price = row.getValue('price') as number;
+      return <div>₹{price.toLocaleString('en-IN')}</div>;
+    }
   },
   {
     accessorKey: 'description',

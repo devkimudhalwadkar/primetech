@@ -144,12 +144,27 @@ export default function ProductForm({
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value='beauty'>Beauty Products</SelectItem>
-                        <SelectItem value='electronics'>Electronics</SelectItem>
-                        <SelectItem value='clothing'>Clothing</SelectItem>
-                        <SelectItem value='home'>Home & Garden</SelectItem>
-                        <SelectItem value='sports'>
-                          Sports & Outdoors
+                        <SelectItem value='Online Courses'>
+                          Online Courses
+                        </SelectItem>
+                        <SelectItem value='E-Books'>E-Books</SelectItem>
+                        <SelectItem value='Study Materials'>
+                          Study Materials
+                        </SelectItem>
+                        <SelectItem value='Video Tutorials'>
+                          Video Tutorials
+                        </SelectItem>
+                        <SelectItem value='Practice Tests'>
+                          Practice Tests
+                        </SelectItem>
+                        <SelectItem value='Certification Programs'>
+                          Certification Programs
+                        </SelectItem>
+                        <SelectItem value='Learning Kits'>
+                          Learning Kits
+                        </SelectItem>
+                        <SelectItem value='Educational Software'>
+                          Educational Software
                         </SelectItem>
                       </SelectContent>
                     </Select>

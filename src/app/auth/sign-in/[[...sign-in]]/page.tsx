@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import SignInViewPage from '@/features/auth/components/sign-in-view';
 
 export const metadata: Metadata = {
-  title: 'Authentication | Sign In',
-  description: 'Sign In page for authentication.'
+  title: 'Prime Technologies | Sign In',
+  description: 'Sign in to access Prime Technologies educational platform.'
 };
 
 export default async function Page() {

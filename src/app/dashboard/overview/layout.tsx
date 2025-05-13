@@ -27,7 +27,7 @@ export default function OverViewLayout({
       <div className='flex flex-1 flex-col space-y-2'>
         <div className='flex items-center justify-between space-y-2'>
           <h2 className='text-2xl font-bold tracking-tight'>
-            Hi, Welcome back 👋
+            Welcome to Prime Technologies Dashboard 👋
           </h2>
         </div>
 
@@ -36,88 +36,88 @@ export default function OverViewLayout({
             <CardHeader>
               <CardDescription>Total Revenue</CardDescription>
               <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
-                $1,250.00
+                ₹2,50,000
               </CardTitle>
               <CardAction>
                 <Badge variant='outline'>
                   <IconTrendingUp />
-                  +12.5%
+                  +15.5%
                 </Badge>
               </CardAction>
             </CardHeader>
             <CardFooter className='flex-col items-start gap-1.5 text-sm'>
               <div className='line-clamp-1 flex gap-2 font-medium'>
-                Trending up this month <IconTrendingUp className='size-4' />
-              </div>
-              <div className='text-muted-foreground'>
-                Visitors for the last 6 months
-              </div>
-            </CardFooter>
-          </Card>
-          <Card className='@container/card'>
-            <CardHeader>
-              <CardDescription>New Customers</CardDescription>
-              <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
-                1,234
-              </CardTitle>
-              <CardAction>
-                <Badge variant='outline'>
-                  <IconTrendingDown />
-                  -20%
-                </Badge>
-              </CardAction>
-            </CardHeader>
-            <CardFooter className='flex-col items-start gap-1.5 text-sm'>
-              <div className='line-clamp-1 flex gap-2 font-medium'>
-                Down 20% this period <IconTrendingDown className='size-4' />
-              </div>
-              <div className='text-muted-foreground'>
-                Acquisition needs attention
-              </div>
-            </CardFooter>
-          </Card>
-          <Card className='@container/card'>
-            <CardHeader>
-              <CardDescription>Active Accounts</CardDescription>
-              <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
-                45,678
-              </CardTitle>
-              <CardAction>
-                <Badge variant='outline'>
-                  <IconTrendingUp />
-                  +12.5%
-                </Badge>
-              </CardAction>
-            </CardHeader>
-            <CardFooter className='flex-col items-start gap-1.5 text-sm'>
-              <div className='line-clamp-1 flex gap-2 font-medium'>
-                Strong user retention <IconTrendingUp className='size-4' />
-              </div>
-              <div className='text-muted-foreground'>
-                Engagement exceed targets
-              </div>
-            </CardFooter>
-          </Card>
-          <Card className='@container/card'>
-            <CardHeader>
-              <CardDescription>Growth Rate</CardDescription>
-              <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
-                4.5%
-              </CardTitle>
-              <CardAction>
-                <Badge variant='outline'>
-                  <IconTrendingUp />
-                  +4.5%
-                </Badge>
-              </CardAction>
-            </CardHeader>
-            <CardFooter className='flex-col items-start gap-1.5 text-sm'>
-              <div className='line-clamp-1 flex gap-2 font-medium'>
-                Steady performance increase{' '}
+                Educational products performing well{' '}
                 <IconTrendingUp className='size-4' />
               </div>
               <div className='text-muted-foreground'>
-                Meets growth projections
+                Revenue from last 6 months
+              </div>
+            </CardFooter>
+          </Card>
+          <Card className='@container/card'>
+            <CardHeader>
+              <CardDescription>Active Students</CardDescription>
+              <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
+                2,345
+              </CardTitle>
+              <CardAction>
+                <Badge variant='outline'>
+                  <IconTrendingUp />
+                  +25%
+                </Badge>
+              </CardAction>
+            </CardHeader>
+            <CardFooter className='flex-col items-start gap-1.5 text-sm'>
+              <div className='line-clamp-1 flex gap-2 font-medium'>
+                Growing student base <IconTrendingUp className='size-4' />
+              </div>
+              <div className='text-muted-foreground'>
+                Active learners this month
+              </div>
+            </CardFooter>
+          </Card>
+          <Card className='@container/card'>
+            <CardHeader>
+              <CardDescription>Course Completion</CardDescription>
+              <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
+                85%
+              </CardTitle>
+              <CardAction>
+                <Badge variant='outline'>
+                  <IconTrendingUp />
+                  +8.5%
+                </Badge>
+              </CardAction>
+            </CardHeader>
+            <CardFooter className='flex-col items-start gap-1.5 text-sm'>
+              <div className='line-clamp-1 flex gap-2 font-medium'>
+                High completion rate <IconTrendingUp className='size-4' />
+              </div>
+              <div className='text-muted-foreground'>
+                Student engagement is strong
+              </div>
+            </CardFooter>
+          </Card>
+          <Card className='@container/card'>
+            <CardHeader>
+              <CardDescription>New Enrollments</CardDescription>
+              <CardTitle className='text-2xl font-semibold tabular-nums @[250px]/card:text-3xl'>
+                456
+              </CardTitle>
+              <CardAction>
+                <Badge variant='outline'>
+                  <IconTrendingUp />
+                  +12.5%
+                </Badge>
+              </CardAction>
+            </CardHeader>
+            <CardFooter className='flex-col items-start gap-1.5 text-sm'>
+              <div className='line-clamp-1 flex gap-2 font-medium'>
+                Growing enrollment rate <IconTrendingUp className='size-4' />
+              </div>
+              <div className='text-muted-foreground'>
+                New students this month
               </div>
             </CardFooter>
           </Card>

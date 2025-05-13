@@ -29,24 +29,48 @@ export const fakeProducts = {
     const sampleProducts: Product[] = [];
     function generateRandomProductData(id: number): Product {
       const categories = [
-        'Electronics',
-        'Furniture',
-        'Clothing',
-        'Toys',
-        'Groceries',
-        'Books',
-        'Jewelry',
-        'Beauty Products'
+        'Online Courses',
+        'E-Books',
+        'Study Materials',
+        'Video Tutorials',
+        'Practice Tests',
+        'Certification Programs',
+        'Learning Kits',
+        'Educational Software'
+      ];
+
+      const productNames = [
+        'Advanced Mathematics Course',
+        'Python Programming E-Book',
+        'Physics Study Guide',
+        'Web Development Tutorial Series',
+        'IELTS Practice Test Bundle',
+        'Data Science Certification',
+        'STEM Learning Kit',
+        'Interactive Learning Software'
+      ];
+
+      const descriptions = [
+        'Comprehensive course covering advanced mathematical concepts',
+        'Complete guide to Python programming with practical examples',
+        'Detailed study materials for physics concepts',
+        'Step-by-step video tutorials for web development',
+        'Complete practice test package for IELTS preparation',
+        'Professional certification program in data science',
+        'Hands-on learning kit for STEM education',
+        'Interactive software for enhanced learning experience'
       ];
 
       return {
         id,
-        name: faker.commerce.productName(),
-        description: faker.commerce.productDescription(),
+        name: faker.helpers.arrayElement(productNames),
+        description: faker.helpers.arrayElement(descriptions),
         created_at: faker.date
           .between({ from: '2022-01-01', to: '2023-12-31' })
           .toISOString(),
-        price: parseFloat(faker.commerce.price({ min: 5, max: 500, dec: 2 })),
+        price: parseFloat(
+          faker.commerce.price({ min: 500, max: 50000, dec: 2 })
+        ), // Prices in rupees
         photo_url: `https://api.slingacademy.com/public/sample-products/${id}.png`,
         category: faker.helpers.arrayElement(categories),
         updated_at: faker.date.recent().toISOString()
