@@ -1,109 +1,153 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/9113740/201498864-2a900c64-d88f-4ed4-b5cf-770bcb57e1f5.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/9113740/201498152-b171abb8-9225-487a-821c-6ff49ee48579.png">
-</picture>
+# 🧭 Prime Technologies - Internal Operations Dashboard
 
-<div align="center"><strong>Next.js Admin Dashboard Starter Template With Shadcn-ui</strong></div>
-<div align="center">Built with the Next.js 15 App Router</div>
-<br />
-<div align="center">
-<a href="https://dub.sh/shadcn-dashboard">View Demo</a>
-<span>
-</div>
+Welcome to the internal dashboard used by **Prime Technologies** to manage and monitor core operations, including product oversight, task management, user access, and analytics. Built with modern web technologies, this platform empowers teams with clear visibility and seamless control.
 
-## Overview
+---
 
-This is a starter template using the following stack:
+## 🌟 Overview
 
-- Framework - [Next.js 15](https://nextjs.org/13)
-- Language - [TypeScript](https://www.typescriptlang.org)
-- Styling - [Tailwind CSS v4](https://tailwindcss.com)
-- Components - [Shadcn-ui](https://ui.shadcn.com)
-- Schema Validations - [Zod](https://zod.dev)
-- State Management - [Zustand](https://zustand-demo.pmnd.rs)
-- Search params state manager - [Nuqs](https://nuqs.47ng.com/)
-- Auth - [Clerk](https://go.clerk.com/ILdYhn7)
-- Tables - [Tanstack Data Tables](https://ui.shadcn.com/docs/components/data-table) • [Dice UI](https://www.diceui.com/docs/components/data-table)
-- Forms - [React Hook Form](https://ui.shadcn.com/docs/components/form)
-- Command+k interface - [kbar](https://kbar.vercel.app/)
-- Linting - [ESLint](https://eslint.org)
-- Pre-commit Hooks - [Husky](https://typicode.github.io/husky/)
-- Formatting - [Prettier](https://prettier.io)
+Designed for scale, speed, and simplicity — this dashboard enables Prime Technologies to:
 
-_If you are looking for a React admin dashboard starter, here is the [repo](https://github.com/Kiranism/react-shadcn-dashboard-starter)._
+- 📦 Manage Products and Inventory
+- 📊 View Real-time Operational Analytics
+- 🗂️ Organize Tasks via Kanban Workflow
+- 👥 Handle Secure Team Authentication & Profiles
+- 🔍 Search, Filter & Navigate with Lightning Fast Performance
 
-## Pages
+Whether it's onboarding a product, checking performance stats, or assigning tasks — everything flows through this unified interface.
 
-| Pages                                                                                 | Specifications                                                                                                                                                                                                                                                          |
-| :------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Signup / Signin](https://next-shadcn-dashboard-starter.vercel.app/auth/sign-up)      | Authentication with **Clerk** provides secure authentication and user management with multiple sign-in options including passwordless authentication, social logins, and enterprise SSO - all designed to enhance security while delivering a seamless user experience. |
-| [Dashboard (Overview)](https://next-shadcn-dashboard-starter.vercel.app/dashboard)    | Cards with recharts graphs for analytics.Parallel routes in the overview sections with independent loading, error handling, and isolated component rendering .                                                                                                          |
-| [Product](https://next-shadcn-dashboard-starter.vercel.app/dashboard/product)         | Tanstack tables with server side searching, filter, pagination by Nuqs which is a Type-safe search params state manager in nextjs                                                                                                                                       |
-| [Product/new](https://next-shadcn-dashboard-starter.vercel.app/dashboard/product/new) | A Product Form with shadcn form (react-hook-form + zod).                                                                                                                                                                                                                |
-| [Profile](https://next-shadcn-dashboard-starter.vercel.app/dashboard/profile)         | Clerk's full-featured account management UI that allows users to manage their profile and security settings                                                                                                                                                             |
-| [Kanban Board](https://next-shadcn-dashboard-starter.vercel.app/dashboard/kanban)     | A Drag n Drop task management board with dnd-kit and zustand to persist state locally.                                                                                                                                                                                  |
-| [Not Found](https://next-shadcn-dashboard-starter.vercel.app/dashboard/notfound)      | Not Found Page Added in the root level                                                                                                                                                                                                                                  |
-| -                                                                                     | -                                                                                                                                                                                                                                                                       |
+---
 
-## Feature based organization
+## ⚙️ Tech Stack
 
-```plaintext
+Built using the latest in frontend engineering to ensure reliability and responsiveness.
+
+| Layer | Technology |
+|-------|------------|
+| Framework | **Next.js 15** |
+| Language | **TypeScript** |
+| Styling | **Tailwind CSS v4** |
+| UI Library | **Shadcn-ui** |
+| Form Handling | **React Hook Form + Zod** |
+| State Management | **Zustand** |
+| Auth | **Clerk** |
+| Tables | **Tanstack Table + Dice UI** |
+| Search Param State | **Nuqs** |
+| UI Command Interface | **kbar (Cmd + K)** |
+| Linting & Formatting | **ESLint, Prettier, Husky** |
+
+---
+
+## 🧩 App Pages
+
+| Page | Description |
+|------|-------------|
+| **Sign Up / Sign In** | Secure multi-method authentication using Clerk |
+| **Dashboard (Overview)** | KPI cards, graphs, and loading states via parallel routing |
+| **Products** | Manage product listings with search, filters, pagination |
+| **Add Product** | Form with full validation for adding new items |
+| **Kanban Board** | Drag-and-drop task management with persistent state |
+| **Profile** | Full user settings, password, and session control |
+| **404 Not Found** | Graceful fallback for invalid routes |
+
+---
+
+## 🗂️ Feature-Oriented Directory Structure
+
+## 📁 Directory Structure
+
+```bash
 src/
-├── app/ # Next.js App Router directory
-│ ├── (auth)/ # Auth route group
-│ │ ├── (signin)/
-│ ├── (dashboard)/ # Dashboard route group
-│ │ ├── layout.tsx
-│ │ ├── loading.tsx
-│ │ └── page.tsx
-│ └── api/ # API routes
+├── app/                     # Next.js App Router directory
+│   ├── (auth)/             # Authentication routes (sign in, sign up)
+│   ├── (dashboard)/        # Dashboard layout and pages
+│   │   ├── layout.tsx
+│   │   ├── loading.tsx
+│   │   └── page.tsx
+│   └── api/                # Backend API route handlers
 │
-├── components/ # Shared components
-│ ├── ui/ # UI components (buttons, inputs, etc.)
-│ └── layout/ # Layout components (header, sidebar, etc.)
+├── components/             # Shared UI components
+│   ├── ui/                 # Reusable UI elements (buttons, inputs, etc.)
+│   └── layout/             # Layout components (header, sidebar, etc.)
 │
-├── features/ # Feature-based modules
-│ ├── feature/
-│ │ ├── components/ # Feature-specific components
-│ │ ├── actions/ # Server actions
-│ │ ├── schemas/ # Form validation schemas
-│ │ └── utils/ # Feature-specific utilities
-│ │
-├── lib/ # Core utilities and configurations
-│ ├── auth/ # Auth configuration
-│ ├── db/ # Database utilities
-│ └── utils/ # Shared utilities
+├── features/               # Feature-specific modules
+│   ├── product/            # Product management logic and UI
+│   ├── tasks/              # Kanban board and task management
+│   └── user/               # User profile and settings
 │
-├── hooks/ # Custom hooks
-│ └── use-debounce.ts
+├── lib/                    # Core utilities and configurations
+│   ├── auth/               # Clerk auth configurations
+│   ├── db/                 # Database integration and setup
+│   └── utils/              # Shared utility functions
 │
-├── stores/ # Zustand stores
-│ └── dashboard-store.ts
+├── hooks/                  # Custom React hooks
+│   └── use-debounce.ts
 │
-└── types/ # TypeScript types
-└── index.ts
+├── stores/                 # Zustand state management stores
+│   └── dashboard-store.ts
+│
+└── types/                  # TypeScript global types
+    └── index.ts
+```
+## 🚀 Getting Started
+
+To get the project up and running locally, follow these steps:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/devkimudhalwadkar/primetech.git
+cd primetech
 ```
 
-## Getting Started
+### 2. Install Dependencies
 
-> [!NOTE]  
-> We are using **Next 15** with **React 19**, follow these steps:
-
-Clone the repo:
-
-```
-git clone https://github.com/Kiranism/next-shadcn-dashboard-starter.git
+```bash
+pnpm install
 ```
 
-- `pnpm install` ( we have legacy-peer-deps=true added in the .npmrc)
-- Create a `.env.local` file by copying the example environment file:
-  `cp env.example.txt .env.local`
-- Add the required environment variables to the `.env.local` file.
-- `pnpm run dev`
+> ℹ️ Note: The project uses `legacy-peer-deps=true`, already configured in `.npmrc` for compatibility.
 
-You should now be able to access the application at http://localhost:3000.
+### 3. Set Up Environment Variables
 
-> [!WARNING]
-> After cloning or forking the repository, be cautious when pulling or syncing with the latest changes, as this may result in breaking conflicts.
+Create a local environment file by copying the example:
 
-Cheers! 🥂
+```bash
+cp env.example.txt .env.local
+```
+
+Then, fill in `.env.local` with your required keys (e.g., Clerk API, database URL, etc.).
+
+---
+
+## 💻 Run the Application
+
+Start the development server:
+
+```bash
+pnpm run dev
+```
+
+Now, open [http://localhost:3000](http://localhost:3000) in your browser to explore the Prime Technology Dashboard.
+
+---
+
+## ⚠️ Heads Up
+
+After forking or cloning this project, be mindful of upstream changes. Pulling updates may introduce breaking changes. Always check commit history before syncing.
+
+---
+
+## 🛠 Maintained by
+
+**Devki Mudhalwadkar**  
+Built for internal use at **Prime Technology** to manage products, tasks, and operations from a centralized interface.
+
+Repository: [https://github.com/devkimudhalwadkar/primetech](https://github.com/devkimudhalwadkar/primetech)
+
+---
+
+## 🥂 Cheers!
+
+This dashboard is crafted with care to help businesses streamline their digital workflows. Contributions and improvements are always welcome!
+
